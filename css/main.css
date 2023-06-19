@@ -548,6 +548,12 @@ h1 {
   font-size: 3rem;
 }
 
+.hero-copy {
+  height: 500px;
+  background: url("../img/bio-image.png") bottom right no-repeat;
+  background-size: 100%;
+  background-position: bottom -14px right -140px;
+}
 .hero-copy h2 {
   color: #A7A7A7;
   font-size: 1.5rem;
@@ -555,7 +561,7 @@ h1 {
 }
 
 .work-card-container {
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .work-card {
@@ -566,6 +572,13 @@ h1 {
   padding: 20px;
   border: 1px solid #eee;
   border-image: linear-gradient(45deg, rgb(143, 55, 0), rgb(66, 228, 250)) 1;
+}
+.work-card h3 {
+  color: #eee;
+  font-weight: 600;
+}
+.work-card p {
+  color: #878787;
 }
 
 /* ==========================================================================
