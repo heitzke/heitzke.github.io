@@ -1,0 +1,23 @@
+{
+  "name": "heitzke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.59.3"
+  },
+  "dependencies": {
+    "bourbon": "^7.3.0",
+    "gulp-install": "^1.1.0"
+  }
+}
