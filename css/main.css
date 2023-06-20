@@ -546,18 +546,25 @@ h1 {
   font-weight: 200;
   color: #dcdcdc;
   font-size: 3rem;
+  margin: 0;
 }
 
-.hero-copy {
-  height: 500px;
+.hero-container {
   background: url("../img/bio-image.png") bottom right no-repeat;
-  background-size: 100%;
-  background-position: bottom -14px right -140px;
+  background-size: 90%;
+  background-position: bottom -14px right -120px;
+  padding: 275px 0 120px 25px;
 }
-.hero-copy h2 {
+.hero-container h2 {
   color: #A7A7A7;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 200;
+  margin: 0;
+}
+
+.hero-container--copy {
+  width: 50%;
+  display: block;
 }
 
 .work-card-container {
@@ -576,18 +583,26 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 6px;
   z-index: 1;
+  display: flex;
+  text-decoration: none;
   background: linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
 }
 .work-card h3 {
   color: #eee;
   font-weight: 600;
+  margin: 0;
 }
 .work-card p {
   color: #878787;
+  margin: 0;
 }
 .work-card:hover::before {
   opacity: 1;
   transition: opacity 0.2s ease;
+}
+
+.work-card--content {
+  align-self: flex-end;
 }
 
 .work-card::before {
@@ -604,6 +619,29 @@ h1 {
   z-index: -1;
   transition: opacity 0.2s ease;
   background: linear-gradient(180deg, rgb(53, 49, 53) 0%, rgb(52, 48, 52) 60%, rgb(62, 58, 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+}
+
+footer {
+  border-top: 1px solid #2C2C2C;
+  margin: 60px 0 30px 0;
+  padding: 15px 0 0 0;
+}
+footer p, footer a {
+  color: #727272;
+  margin: 0;
+  text-decoration: none;
+}
+footer p {
+  float: right;
+  font-size: 0.75rem;
+}
+footer a {
+  float: left;
+  transition: all 0.2s ease;
+}
+footer a:hover {
+  color: #999;
+  transition: all 0.2s ease;
 }
 
 /* ==========================================================================
