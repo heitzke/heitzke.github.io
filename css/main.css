@@ -568,6 +568,12 @@ h1.hero {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+  color: #dcdcdc;
+  font-weight: 200;
+}
+
 .hero-container {
   background: url("../img/bio-image.png") bottom right no-repeat;
   background-size: 90%;
