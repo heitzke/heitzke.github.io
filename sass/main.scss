@@ -187,6 +187,13 @@ h3 {
     opacity: 1;
     transition: opacity .2s ease;
   }
+  &.hashicorp-1 {
+    background-size: 67%;
+    background:
+    url('../img/hashi-card-bg.png') top right no-repeat,
+    linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69 69 69), rgb(49 49 49)) border-box;
+    background-size: 67%;
+  }
 }
 
 .work-card--content {
@@ -208,6 +215,13 @@ h3 {
   transition: opacity .2s ease;
   background: 
     linear-gradient(180deg, rgb(53 49 53) 0%, rgb(52 48 52) 60%, rgb(62 58 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+}
+
+.work-card.hashicorp-1::before {
+    background: 
+    url('../img/hashi-card-bg.png') top right no-repeat,
+    linear-gradient(180deg, rgb(53 49 53) 0%, rgb(52 48 52) 60%, rgb(62 58 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+    background-size: 67%;
 }
 
 footer {
