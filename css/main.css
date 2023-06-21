@@ -732,6 +732,10 @@ p {
   background: url("../img/hashi-hero.png") bottom right no-repeat;
   background-size: 50%;
 }
+.portfolio-hero.fieldapp-hero {
+  background: url("../img/fieldapp-hero.png") 93% 100% no-repeat;
+  background-size: 46%;
+}
 .portfolio-hero h1 {
   margin-top: 80px;
 }
@@ -779,6 +783,15 @@ p {
 }
 .role-content-container .role-content-block:nth-of-type(2n) {
   margin: 0px 20px;
+}
+.role-content-container .role-content-block.fieldapp-role {
+  flex-basis: 50%;
+}
+.role-content-container .role-content-block.fieldapp-role:first-of-type {
+  margin: 0 10px 0 0;
+}
+.role-content-container .role-content-block.fieldapp-role:last-of-type {
+  margin: 0 0 0 10px;
 }
 
 .hashi-diagram {
