@@ -102,6 +102,7 @@ textarea {
 
 p {
   color: #EFEFEF;
+  line-height: 1.6rem;
 }
 
 a {
@@ -129,7 +130,7 @@ h1 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #dcdcdc;
   font-weight: 200;
 }
@@ -144,6 +145,8 @@ ul {
 
 p {
   color: #EFEFEF;
+  line-height: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .hero-container {
@@ -305,6 +308,10 @@ p {
   }
 }
 
+.hashi-diagram {
+  margin: 10px auto 20px auto;
+  display: block;
+}
 
 .product-images {
   margin: 60px 0;
@@ -315,6 +322,16 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.portfolio-content {
+  h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333131;
+  }
+  .content-block {
+    margin: 0 0 30px 0;
+  }
 }
 
 footer {
