@@ -551,12 +551,18 @@ p {
 }
 
 a {
-  color: #EFEFEF;
+  color: #ccc;
   text-decoration: none;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: #fff;
 }
 a.breadcrumb {
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding-top: 40px;
+  font-weight: 300;
 }
 a.breadcrumb img {
   padding: 0 6px 0 0;
@@ -731,6 +737,7 @@ p {
 }
 .role-content-container .role-content-block {
   background: inherit;
+  background: #2c292c;
   border: 1px solid #303030;
   padding: 20px;
   border-radius: 5px;
@@ -784,7 +791,7 @@ p {
   background: #1B181B;
   border-top: 1px solid #303030;
   border-bottom: 1px solid #303030;
-  padding: 60px 0 40px 0;
+  padding: 60px 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -799,16 +806,17 @@ p {
 }
 
 .view-site {
-  margin: 30px auto 0 auto;
-  border: 1px solid #434343;
-  background: #2e2e2e;
+  width: auto;
+  border: 1px solid #292929;
+  background: #151515;
   padding: 8px 16px;
   border-radius: 5px;
   transition: all 0.2s ease;
+  width: fit-content;
 }
 .view-site:hover {
-  background: #333;
-  border: 1px solid #555;
+  background: #000;
+  border: 1px solid #222;
 }
 
 .portfolio-content h3 {
@@ -820,6 +828,23 @@ p {
 }
 .portfolio-content .content-block img {
   margin-bottom: 20px;
+}
+
+.casestudy-links {
+  display: flex;
+  justify-content: space-between;
+}
+.casestudy-links a {
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 45%;
+}
+.casestudy-links .previous-btn {
+  background: #494949;
+}
+.casestudy-links .next-btn {
+  background: #494949;
 }
 
 footer {
