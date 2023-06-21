@@ -735,6 +735,7 @@ p {
 .hashi-diagram {
   margin: 10px auto 20px auto;
   display: block;
+  width: 100%;
 }
 
 .product-images {
@@ -746,6 +747,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .portfolio-content h3 {
