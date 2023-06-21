@@ -555,6 +555,7 @@ a {
 }
 a.breadcrumb {
   font-size: 0.75rem;
+  padding-top: 40px;
 }
 a.breadcrumb img {
   padding: 0 6px 0 0;
@@ -575,6 +576,14 @@ h3 {
   font-size: 1.5rem;
   color: #dcdcdc;
   font-weight: 200;
+}
+
+ul {
+  color: #efefef;
+  padding: 0 0 0 15px;
+}
+p {
+  color: #EFEFEF;
 }
 
 .hero-container {
@@ -667,6 +676,68 @@ h3 {
 .work-card.fieldapp::before {
   background: url("../img/fieldapp-bg.png") bottom right no-repeat, linear-gradient(180deg, rgb(53, 49, 53) 0%, rgb(52, 48, 52) 60%, rgb(62, 58, 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
   background-size: 67%;
+}
+
+.portfolio-hero {
+  padding: 0 0 40px 0;
+}
+.portfolio-hero.hashicorp {
+  background: url("../img/hashi-hero.png") bottom right no-repeat;
+  background-size: 50%;
+}
+.portfolio-hero h1 {
+  margin-top: 80px;
+}
+.portfolio-hero p {
+  color: #A7A7A7;
+  font-size: 1rem;
+}
+
+.role-content-container {
+  background: #282428;
+  border: 1px solid #303030;
+  box-shadow: 1px 4px 10px -3px #272727;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 20px;
+}
+.role-content-container h4 {
+  color: #b4b4b4;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1rem;
+}
+.role-content-container p {
+  margin: 10px 0 0 0;
+}
+.role-content-container ul {
+  margin: 10px 0 0 0;
+}
+.role-content-container ul li {
+  margin: 0;
+}
+.role-content-container .role-content-block {
+  background: inherit;
+  border: 1px solid #303030;
+  padding: 20px;
+  border-radius: 5px;
+  flex-basis: 33%;
+}
+.role-content-container .role-content-block:nth-of-type(2n) {
+  margin: 0px 20px;
+}
+
+.product-images {
+  margin: 60px 0;
+  background: #1B181B;
+  border-top: 1px solid #303030;
+  border-bottom: 1px solid #303030;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 footer {
