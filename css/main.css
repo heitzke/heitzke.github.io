@@ -621,8 +621,22 @@ p {
   margin: 0 0 20px 0;
 }
 
+.construction {
+  position: absolute;
+  background: #393439;
+  width: 110%;
+  left: -20px;
+  border: 1px solid #4f474f;
+  top: 100px;
+  rotate: 12deg;
+  right: 0;
+  padding: 10px 0 13px 26px;
+}
+
 .work-card {
+  overflow: hidden;
   position: relative;
+  width: inherit;
   padding: 20px;
   background: #282428;
   height: 250px;
@@ -655,10 +669,20 @@ p {
   background: url("../img/hashi-card-bg.png") top right no-repeat, linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
   background-size: 67%;
 }
+.work-card.hashicorp-2 {
+  background-size: 67%;
+  background: url("../img/hashicorp-main-2.png") bottom right no-repeat, linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+  background-size: 40%;
+}
 .work-card.fieldapp {
   background-size: 67%;
   background: url("../img/fieldapp-bg.png") bottom right no-repeat, linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
   background-size: 67%;
+}
+.work-card.watchbox {
+  background-size: 67%;
+  background: url("../img/watchbox-main.png") bottom right no-repeat, linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+  background-size: 57%;
 }
 
 .work-card--content {
@@ -689,6 +713,16 @@ p {
 .work-card.fieldapp::before {
   background: url("../img/fieldapp-bg.png") bottom right no-repeat, linear-gradient(180deg, rgb(53, 49, 53) 0%, rgb(52, 48, 52) 60%, rgb(62, 58, 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
   background-size: 67%;
+}
+
+.work-card.watchbox::before {
+  background: url("../img/watchbox-main.png") bottom right no-repeat, linear-gradient(180deg, rgb(53, 49, 53) 0%, rgb(52, 48, 52) 60%, rgb(62, 58, 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+  background-size: 57%;
+}
+
+.work-card.hashicorp-2::before {
+  background: url("../img/hashicorp-main-2.png") bottom right no-repeat, linear-gradient(180deg, rgb(53, 49, 53) 0%, rgb(52, 48, 52) 60%, rgb(62, 58, 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+  background-size: 40%;
 }
 
 .portfolio-hero {
@@ -830,10 +864,6 @@ p {
   margin-bottom: 20px;
 }
 
-.casestudy-links {
-  display: flex;
-  justify-content: space-between;
-}
 .casestudy-links a {
   border-radius: 5px;
   padding: 15px;
@@ -845,6 +875,7 @@ p {
 }
 .casestudy-links .next-btn {
   background: #494949;
+  float: right;
 }
 
 footer {
