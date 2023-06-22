@@ -599,6 +599,15 @@ p {
   margin-bottom: 1.6rem;
 }
 
+.banner {
+  background: #111;
+  width: 100%;
+  text-align: center;
+  color: #eee;
+  font-weight: 200;
+  padding: 12px 0;
+}
+
 .hero-container {
   background: url("../img/bio-image.png") bottom right no-repeat;
   background-size: 90%;
