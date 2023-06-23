@@ -21,7 +21,7 @@
  * $fg-class-off string used for the offset class
  */
 $fg-columns: 12 !default;
-$fg-gutter: 0.75rem !default;
+$fg-gutter: 1rem !default;
 
 $fg-class-row: 'row' !default;
 $fg-class-col: 'col' !default;
@@ -47,10 +47,34 @@ $fg-class-off: 'off' !default;
  */
 $fg-breakpoints: (
   (xs),
-  (sm, 768px),
+  (sm, 660px),
   (md, 992px),
   (lg, 1200px)
 ) !default;
+
+
+$xsBreakpoint: 660px;
+$smBreakpoint: 992px;
+$mdBreakpoint: 1200px;
+
+@mixin xs-breakpoint {
+@media only screen and (max-width: $xsBreakpoint){
+@content
+}
+}
+
+@mixin sm-breakpoint {
+@media only screen and (min-width: $smBreakpoint){
+@content
+}
+}
+
+@mixin md-breakpoint {
+@media only screen and (min-width: $mdBreakpoint){
+@content
+}
+}
+
 
 /**
  * Class Name Defaults

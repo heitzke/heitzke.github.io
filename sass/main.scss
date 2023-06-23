@@ -172,28 +172,38 @@ p {
   background: url('../img/bio-image.png') bottom right no-repeat;
   background-size: 90%;
   background-position: bottom -14px right -120px;
-  padding: 275px 0 120px 25px;
+  padding: 200px 0 120px 25px;
   h2 {
     color: #A7A7A7;
     font-size: 1.35rem;
     font-weight: 200;
     margin: 0;
   }
+  @media only screen and (min-width: 950px){
+    padding-top: 275px;
+  }
+  @include xs-breakpoint {
+    padding: 200px 0 30px 0;
+    background-size: 131%;
+    background-position: bottom -14px right -100px;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 .hero-container--copy {
-  width: 50%;
-  display: block;
 }
 
 .work-card-container {
-  margin: 0 0 20px 0;
+  margin: 0 0 32px 0;
+  @include xs-breakpoint {
+    margin-bottom: 0;
+  }
 }
 
 
 .construction {
-  
-
     position: absolute;
     background: #393439;
     width: 110%;
@@ -203,8 +213,6 @@ p {
     rotate: 12deg;
     right: 0;
     padding: 10px 0 13px 26px;
-
-
 }
 
 .work-card {
@@ -225,6 +233,12 @@ p {
   text-decoration: none;
   background:
     linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69 69 69), rgb(49 49 49)) border-box;
+
+  @include xs-breakpoint {
+    margin-bottom: 30px;
+    height: 225px;
+  }
+
   h3 {
     color: #eee;
     font-weight: 600;
@@ -245,7 +259,7 @@ p {
   &.hashicorp-1 {
     background-size: 67%;
     background:
-    url('../img/hashi-card-bg.png') top right no-repeat,
+    url('../img/hashi-card-bg.png') bottom right no-repeat,
     linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69 69 69), rgb(49 49 49)) border-box;
     background-size: 67%;
   }
@@ -297,7 +311,7 @@ p {
 
 .work-card.hashicorp-1::before {
     background: 
-    url('../img/hashi-card-bg.png') top right no-repeat,
+    url('../img/hashi-card-bg.png') bottom right no-repeat,
     linear-gradient(180deg, rgb(53 49 53) 0%, rgb(52 48 52) 60%, rgb(62 58 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
     background-size: 67%;
 }

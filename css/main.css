@@ -55,8 +55,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col-xs-12, .col-xs-11, .col-xs-10, .col-xs-9, .col-xs-8, .col-xs-7, .col-xs-6, .col-xs-5, .col-xs-4, .col-xs-3, .col-xs-2, .col-xs-1, .col-lg, .col-md, .col-sm, .col-xs {
@@ -66,8 +66,8 @@
   flex-grow: 0;
   flex-shrink: 0;
   min-height: 1px;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .col-lg, .col-md, .col-sm, .col-xs {
@@ -197,7 +197,7 @@
   margin-left: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 660px) {
   .col-sm-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;
@@ -618,7 +618,7 @@ p {
   background: url("../img/bio-image.png") bottom right no-repeat;
   background-size: 90%;
   background-position: bottom -14px right -120px;
-  padding: 275px 0 120px 25px;
+  padding: 200px 0 120px 25px;
 }
 .hero-container h2 {
   color: #A7A7A7;
@@ -626,14 +626,29 @@ p {
   font-weight: 200;
   margin: 0;
 }
-
-.hero-container--copy {
-  width: 50%;
-  display: block;
+@media only screen and (min-width: 950px) {
+  .hero-container {
+    padding-top: 275px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .hero-container {
+    padding: 200px 0 30px 0;
+    background-size: 131%;
+    background-position: bottom -14px right -100px;
+  }
+  .hero-container h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .work-card-container {
-  margin: 0 0 20px 0;
+  margin: 0 0 32px 0;
+}
+@media only screen and (max-width: 660px) {
+  .work-card-container {
+    margin-bottom: 0;
+  }
 }
 
 .construction {
@@ -666,6 +681,12 @@ p {
   text-decoration: none;
   background: linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
 }
+@media only screen and (max-width: 660px) {
+  .work-card {
+    margin-bottom: 30px;
+    height: 225px;
+  }
+}
 .work-card h3 {
   color: #eee;
   font-weight: 600;
@@ -681,7 +702,7 @@ p {
 }
 .work-card.hashicorp-1 {
   background-size: 67%;
-  background: url("../img/hashi-card-bg.png") top right no-repeat, linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+  background: url("../img/hashi-card-bg.png") bottom right no-repeat, linear-gradient(180deg, rgb(44, 40, 44) 0%, rgb(44, 40, 44) 60%, rgb(40, 36, 40) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
   background-size: 67%;
 }
 .work-card.hashicorp-2 {
@@ -721,7 +742,7 @@ p {
 }
 
 .work-card.hashicorp-1::before {
-  background: url("../img/hashi-card-bg.png") top right no-repeat, linear-gradient(180deg, rgb(53, 49, 53) 0%, rgb(52, 48, 52) 60%, rgb(62, 58, 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
+  background: url("../img/hashi-card-bg.png") bottom right no-repeat, linear-gradient(180deg, rgb(53, 49, 53) 0%, rgb(52, 48, 52) 60%, rgb(62, 58, 62) 100%) padding-box, linear-gradient(177deg, rgb(69, 69, 69), rgb(49, 49, 49)) border-box;
   background-size: 67%;
 }
 
