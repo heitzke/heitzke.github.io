@@ -579,6 +579,12 @@ h1.hero {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2.75rem;
+  color: #dcdcdc;
+  font-weight: 200;
+}
+
 h3 {
   font-size: 1.75rem;
   color: #dcdcdc;
@@ -745,6 +751,10 @@ p {
   background: url("../img/fieldapp-hero.png") 93% 100% no-repeat;
   background-size: 46%;
 }
+.portfolio-hero.fieldapp-hero-ma {
+  background: url("../img/fieldapp-hero-ma.png") 93% 100% no-repeat;
+  background-size: 46%;
+}
 .portfolio-hero h1 {
   margin-top: 80px;
 }
@@ -886,18 +896,45 @@ p {
   margin-bottom: 20px;
 }
 
+.casestudy-links {
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+}
 .casestudy-links a {
   border-radius: 5px;
   padding: 15px;
   display: block;
   width: 45%;
 }
+.casestudy-links h5 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+}
 .casestudy-links .previous-btn {
-  background: #494949;
+  background: #2e292e;
+  border: 1px solid #403a40;
+  text-align: right;
+}
+.casestudy-links .previous-btn:hover {
+  background: #3a343a;
+}
+.casestudy-links .previous-btn img {
+  float: left;
+  margin-top: 15px;
 }
 .casestudy-links .next-btn {
-  background: #494949;
+  background: #2e292e;
   float: right;
+  border: 1px solid #403a40;
+}
+.casestudy-links .next-btn:hover {
+  background: #3a343a;
+}
+.casestudy-links .next-btn img {
+  float: right;
+  margin-top: 15px;
 }
 
 footer {

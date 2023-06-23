@@ -134,7 +134,11 @@ h1 {
     font-size: 3rem;
   }
 }
-
+h2 {
+  font-size: 2.75rem;
+  color: #dcdcdc;
+  font-weight: 200;
+}
 h3 {
   font-size: 1.75rem;
   color: #dcdcdc;
@@ -328,6 +332,10 @@ p {
     background: url('../img/fieldapp-hero.png') 93% 100% no-repeat;
     background-size: 46%;
   }
+  &.fieldapp-hero-ma {
+    background: url('../img/fieldapp-hero-ma.png') 93% 100% no-repeat;
+    background-size: 46%;
+  }
 
   h1 {
     margin-top: 80px;
@@ -477,19 +485,46 @@ p {
 }
 
 .casestudy-links {
-;
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
   a {
     border-radius: 5px;
     padding: 15px;
     display: block;
     width: 45%;
   }
+  h5 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;    
+  }
+  span {
+
+  } 
   .previous-btn {
-    background: #494949;
+    background: #2e292e;
+    border: 1px solid #403a40;
+    &:hover {
+      background: #3a343a;
+    }
+    img {
+      float: left;
+      margin-top: 15px;
+    }
+    text-align: right;
   }
   .next-btn {
-    background: #494949;
+    background: #2e292e;
     float: right;
+    border: 1px solid #403a40;
+    &:hover {
+      background: #3a343a;
+    }
+    img {
+      float: right; 
+      margin-top: 15px;
+    }
   }
 }
 
