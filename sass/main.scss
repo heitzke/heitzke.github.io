@@ -374,6 +374,9 @@ p {
   justify-content: space-between;
   border-radius: 5px;
   padding: 20px;
+  @include xs-breakpoint {
+    display: block;
+  }
   h4 {
     color: #b4b4b4;
     font-weight: 200;
@@ -397,16 +400,31 @@ p {
     padding: 20px;
     border-radius: 5px;
     flex-basis: 33%;
+    @include xs-breakpoint {
+      margin: 0 0 20px 0;
+      width: auto;
+    }
     &:nth-of-type(2n) {
-      margin: 0px 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      @include xs-breakpoint {
+        margin: 0 0 20px 0;
+        width: auto;
+      }
     }
     &.fieldapp-role {
       flex-basis: 50%;
       &:first-of-type {
         margin: 0 10px 0 0;
+        @include xs-breakpoint {
+          margin: 0;
+        }
       }
       &:last-of-type {
         margin: 0 0 0 10px;
+        @include xs-breakpoint {
+          margin: 16px 0 0 0;
+        }
       }
     }
   }
@@ -421,6 +439,9 @@ p {
 .proposed-diagram {
   float: right; 
   margin-left: 20px;
+  @include xs-breakpoint {
+    float: none; 
+  }
 }
 
 .stats-container {
@@ -456,13 +477,19 @@ p {
   background: #1B181B;
   border-top: 1px solid #303030;
   border-bottom: 1px solid #303030;
-  padding: 60px 0;
+  padding: 32px 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
+  @include xs-breakpoint {
+    display: block; 
+  }
   .product-image {
     flex-basis: 25%;
+    @include xs-breakpoint {
+      padding: 8px 16px; 
+    }
     img {
       height: auto;
           width: 100%;

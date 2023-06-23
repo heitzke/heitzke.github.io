@@ -797,6 +797,11 @@ p {
   border-radius: 5px;
   padding: 20px;
 }
+@media only screen and (max-width: 660px) {
+  .role-content-container {
+    display: block;
+  }
+}
 .role-content-container h4 {
   color: #b4b4b4;
   font-weight: 200;
@@ -821,8 +826,21 @@ p {
   border-radius: 5px;
   flex-basis: 33%;
 }
+@media only screen and (max-width: 660px) {
+  .role-content-container .role-content-block {
+    margin: 0 0 20px 0;
+    width: auto;
+  }
+}
 .role-content-container .role-content-block:nth-of-type(2n) {
-  margin: 0px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 660px) {
+  .role-content-container .role-content-block:nth-of-type(2n) {
+    margin: 0 0 20px 0;
+    width: auto;
+  }
 }
 .role-content-container .role-content-block.fieldapp-role {
   flex-basis: 50%;
@@ -830,8 +848,18 @@ p {
 .role-content-container .role-content-block.fieldapp-role:first-of-type {
   margin: 0 10px 0 0;
 }
+@media only screen and (max-width: 660px) {
+  .role-content-container .role-content-block.fieldapp-role:first-of-type {
+    margin: 0;
+  }
+}
 .role-content-container .role-content-block.fieldapp-role:last-of-type {
   margin: 0 0 0 10px;
+}
+@media only screen and (max-width: 660px) {
+  .role-content-container .role-content-block.fieldapp-role:last-of-type {
+    margin: 16px 0 0 0;
+  }
 }
 
 .hashi-diagram {
@@ -843,6 +871,11 @@ p {
 .proposed-diagram {
   float: right;
   margin-left: 20px;
+}
+@media only screen and (max-width: 660px) {
+  .proposed-diagram {
+    float: none;
+  }
 }
 
 .stats-container {
@@ -878,14 +911,24 @@ p {
   background: #1B181B;
   border-top: 1px solid #303030;
   border-bottom: 1px solid #303030;
-  padding: 60px 0;
+  padding: 32px 0;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
 }
+@media only screen and (max-width: 660px) {
+  .product-images {
+    display: block;
+  }
+}
 .product-images .product-image {
   flex-basis: 25%;
+}
+@media only screen and (max-width: 660px) {
+  .product-images .product-image {
+    padding: 8px 16px;
+  }
 }
 .product-images .product-image img {
   height: auto;
