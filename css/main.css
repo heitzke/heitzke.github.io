@@ -920,6 +920,23 @@ p {
 .product-images.field-images {
   padding-bottom: 0;
 }
+.product-images.field-images .product-image {
+  flex-basis: 100%;
+  text-align: center;
+}
+.product-images.field-images .product-image img {
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .product-images.field-images .product-image img {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .product-images.field-images .product-image img {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 660px) {
   .product-images {
     display: block;

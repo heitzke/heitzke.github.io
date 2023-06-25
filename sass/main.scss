@@ -484,6 +484,19 @@ p {
   width: 100%;
   &.field-images {
     padding-bottom: 0;
+    .product-image {
+      flex-basis: 100%;
+      text-align: center;
+      img {
+        width: 100%;
+        @include md-breakpoint {
+          width: 65%;
+        }
+        @include xs-breakpoint {
+          width: 100%;
+        }
+      }
+    }
   }
   @include xs-breakpoint {
     display: block; 
@@ -495,7 +508,7 @@ p {
     }
     img {
       height: auto;
-          width: 100%;
+      width: 100%;
     }
   }
 }
