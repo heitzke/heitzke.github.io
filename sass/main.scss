@@ -482,6 +482,9 @@ p {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
+  &.field-images {
+    padding-bottom: 0;
+  }
   @include xs-breakpoint {
     display: block; 
   }
